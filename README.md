@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ek Bharat Shreshtha Bharat</title>  
+  <meta charset="UTF-8">
+  <style>
+    body {
+      margin: 0; 
+      padding-top: 40px;
+      font-family: sans-serif;
+      background-color: #F5DEB3;
+    }
+
+    .flag-container {
+      width: 320px;
+      height: 192px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      border: 2px solid #000;
+      animation: wave 2s infinite ease-in-out;
+      transform-origin: left center;
+    }
+
+    .stripe {
+      flex: 1;
+    }
+
+    .saffron { background-color: #FF9933; }
+    .white {
+      background-color: #FFFFFF;
+      position: relative;
+    }
+    .green { background-color: #138808; }
+
+    .chakra {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @keyframes wave {
+      0%   { transform: rotateZ(0deg); }
+      25%  { transform: rotateZ(2deg); }
+      50%  { transform: rotateZ(0deg); }
+      75%  { transform: rotateZ(-2deg); }
+      100% { transform: rotateZ(0deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="flag-container">
+    <div class="stripe saffron"></div>
+    <div class="stripe white">
+      <div class="chakra">
+        <svg viewBox="0 0 100 100" width="48" height="48">
+          <circle cx="50" cy="50" r="48" stroke="#00008b" stroke-width="4" fill="none"/>
+          <g stroke="#00008b" stroke-width="2">
+            <!-- 24 spokes generated using trigonometry -->
+            <!-- Each spoke is a line from center (50,50) to edge -->
+            <!-- Angle step: 360° / 24 = 15° -->
+            <!-- Radius: 48 -->
+            <!-- Coordinates calculated using cos/sin -->
+            <!-- Example: x = 50 + 48 * cos(angle), y = 50 + 48 * sin(angle) -->
+            <!-- We'll use JavaScript to generate the lines -->
+            <script type="application/ecmascript"><![CDATA[
+              const centerX = 50;
+              const centerY = 50;
+              const radius = 48;
+              const spokes = 24;
+              for (let i = 0; i < spokes; i++) {
+                const angle = (i * 15) * Math.PI / 180;
+                const x = centerX + radius * Math.cos(angle);
+                const y = centerY + radius * Math.sin(angle);
+                document.write(`<line x1="${centerX}" y1="${centerY}" x2="${x.toFixed(2)}" y2="${y.toFixed(2)}"/>`);
+              }
+            ]]></script>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="stripe green"></div>
+  </div>
+  
+  <h1><center><font face="times new roman"><font color="#00008b"><font size="7"><font color="#CC6600">Ek Bharat</font>
+  Shreshtha <font color="#138808">Bharat</font></b></font></center></h1>
+  <h1><center><b>Unity</b></center></h1> 
+  <font color="#CC6600">
+    <p>India is full of diverse cultures, languages, clothing styles, and ways of life. From Kashmir to Kanyakumari, every region has its own flavor, but we all share common roots. Ek Bharat Shreshtha Bharat is not just a slogan—it’s the spirit of togetherness that binds over a billion people into one strong nation. Even our festivals, food, and art may differ, yet the heart behind them is the same. The national flag, designed by Pingali Venkayya, is a powerful symbol of this unity.</p>
+  </font> 
+
+  <h1><center><b>The British</b></center></h1> 
+  <font color="#00008b"> 
+    <p>Centuries ago, the British came to India for trade, but slowly took control and ruled the country. Their policies divided people based on region, language, and religion. However, Indians from all walks of life rose up in unity. Leaders like Gandhiji, Nehru, and countless brave souls—many of them ordinary citizens—fought together for independence. This movement wasn’t just political, it was emotional, cultural, and spiritual. The adoption of the national flag on July 22, 1947, was a proud step toward reclaiming our identity.</p> 
+  </font> 
+
+  <h1><center><b>ORIGIN OF THE TIRANGA</b></center></h1>
+  <font color="#138808">
+    <p>The Indian national flag, called the Tiranga, was officially adopted on July 22, 1947, just before independence. It was originally designed by Pingali Venkayya, a freedom fighter from Andhra Pradesh. The flag went through several versions—Gandhiji recommended changes to reflect India's diversity and self-reliance. The final version carries deep meaning:</p> 
+  </font> 
+
+  <font color="#00008b">
+    <ul>
+      <font color="#CC6600">
+        <li>🟧 Saffron stands for courage and sacrifice</li>
+      </font>
+      <font color="#bbbbbb"> 
+        <li>⬜ White for peace and truth</li>
+      </font>
+      <font color="#138808"> 
+        <li>🟩 Green for faith and prosperity</li>
+      </font>
+      <font color="#00008b">
+        <li>🔵 The central Ashoka Chakra, with its 24 spokes, represents the wheel of law and progress</li>
+      </font>
+    </ul> 
+  </font> 
+</body> 
+</html>
+
+
+
